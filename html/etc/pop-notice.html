@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title></title>
+    <link rel="stylesheet" href="../../assets/style/common.css" type="text/css"/>
+
+    <script type="text/javascript" src="../../assets/script/ui.js"></script>
+    <script type="text/javascript" src="../../assets/script/lib/swiper.js"></script>
+    <script type="text/javascript" src="../../assets/script/common.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper"><!-- start : wrapper -->
+
+
+</div>
+
+<div class="dialog ing on">
+    <div class="pop-notice-wrap">
+        <div class="pop-header-wrap">
+            <div class="ptit">공지</div>
+            <a href="javascript:void(0)"><img src="../../assets/image/ico/ico-close01.png" /></a>
+        </div>
+        <!-- Swiper -->
+        <div id="notice-slide-wrap" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="pop-notice-cont-wrap">
+                        <div class="ntit">운행 중지 안내!</div>
+                        <div class="ndesc">금일 12월 24일은  광화문 집회로 인하여
+                            <br />전일 운행을 중지합니다!
+                            <br />금일 예약자 분들은 아래의 연락처로 연락을 주시면
+                            <br />티켓 취소 및 날짜변경을 안내해 드리겠습니다!
+
+                            <br /><br />이용에 불편을 드려 죄송합니다!
+
+                            <br /><br />전화번호: 02-777-6090     </div>
+                        <button type="button">바로가기</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pop-notice-cont-wrap">
+                        <div class="ntit">운행 중지 안내!</div>
+                        <div class="ndesc">금일 12월 24일은  광화문 집회로 인하여
+                            <br />전일 운행을 중지합니다!
+                            <br />금일 예약자 분들은 아래의 연락처로 연락을 주시면
+                            <br />티켓 취소 및 날짜변경을 안내해 드리겠습니다!
+
+                            <br /><br />이용에 불편을 드려 죄송합니다!
+                            금일 12월 24일은  광화문 집회로 인하여
+                            <br />전일 운행을 중지합니다!
+                            <br />금일 예약자 분들은 아래의 연락처로 연락을 주시면
+                            <br />티켓 취소 및 날짜변경을 안내해 드리겠습니다!
+
+                            <br /><br />이용에 불편을 드려 죄송합니다!
+
+                            <br /><br />전화번호: 02-777-6090     </div>
+                        <button type="button">바로가기</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="pop-notice-cont-wrap">
+                        <div class="ntit">운행 중지 안내!</div>
+                        <div class="ndesc">금일 12월 24일은  광화문 집회로 인하여
+                            <br />전일 운행을 중지합니다!
+                            <br />금일 예약자 분들은 아래의 연락처로 연락을 주시면
+                            <br />티켓 취소 및 날짜변경을 안내해 드리겠습니다!
+
+                            <br /><br />이용에 불편을 드려 죄송합니다!
+
+                            <br /><br />전화번호: 02-777-6090     </div>
+                        <button type="button">바로가기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+        <script>
+            var noticeSlideWrap = new Swiper('#notice-slide-wrap', {
+                //loop: true,
+                speed: 1000,
+                parallax: true,
+                slidesPerView: "1",
+                autoHeight: true, //enable auto height
+                calculateHeight:true,
+                observer: true,
+                observeParents: true,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: '#notice-slide-wrap .swiper-button-next',
+                    prevEl: '#notice-slide-wrap .swiper-button-prev',
+                },
+            });
+        </script>
+
+        <div class="pop-chk-wrap">
+            <label>
+                <span>오늘 하루 이 창을 열지 않습니다!</span>
+                <input type="checkbox" />
+            </label>
+        </div>
+
+
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $("body").on("click", ".pop-notice-wrap .pop-header-wrap a", function(){
+            var n = $(".pop-notice-wrap").length;
+            if(n > 1){
+                $(this).parents(".pop-notice-wrap").eq(0).remove();
+            }else{
+                common.popClose('.dialog');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
