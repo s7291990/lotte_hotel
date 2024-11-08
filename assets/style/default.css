@@ -1398,7 +1398,7 @@ footer.type01{background:#fff;height:137px;border-top:1px solid #937979;display:
 .pop-member-wrap .login-type-list{width:100%;height:auto;overflow:hidden;margin-top:30px;}
 .pop-member-wrap .login-type-list dt{width:100%;height:auto;overflow:hidden;font-size:14px;color:#ac1f24;font-weight:600;text-align:center;}
 .pop-member-wrap .login-type-list dd{width:100%;height:auto;overflow:hidden;text-align:center;margin-top:20px;}
-.pop-member-wrap .login-type-list dd ul{width:100%;height:auto;overflow:hidden;display:display:block;}
+.pop-member-wrap .login-type-list dd ul{width:100%;height:auto;overflow:hidden;display:block;}
 .pop-member-wrap .login-type-list dd ul li{margin:0 0 5px 0;display:flex;width:calc( 50% - 4px );float:left;}
 .pop-member-wrap .login-type-list dd ul li:nth-child(even){float:right;}
 .pop-member-wrap .login-type-list dd ul li img{width:100%;}
@@ -2180,3 +2180,9 @@ input[type="number"]::-webkit-inner-spin-button {
 #notice-slide-wrap  .swiper-button-next{top:auto;bottom:15px;width:40px;height:40px;border-radius:50%;background:#333;display:flex;justify-content:center;align-items:center;}
 #notice-slide-wrap .swiper-button-prev:after{font-size:20px;color:#fff;}
 #notice-slide-wrap .swiper-button-next:after{font-size:20px;color:#fff;}
+
+.login-form-wrap{}
+.login-form-wrap h1{}
+.login-form-wrap .form-item-wrap{}
+.login-form-wrap .form-item-wrap .inp{}
+.login-form-wrap button{}
