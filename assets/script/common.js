@@ -108,7 +108,7 @@ common = {
             $(this).prev(".hidden").trigger("click");
         });
 		
-		/*	°è»êÀ» À§ÇØ º°µµ·Î »«´Ù.
+		/*	ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
         $("body").on("click", ".cnt-wrap .btn-mius", function(){
             var n = parseInt($(this).parents(".cnt-wrap").eq(0).find("input").val());
             if(n > 0){
@@ -121,7 +121,7 @@ common = {
         });
 		*/
 
-/*		Å¾½Â½Ã°£ ¼±ÅÃÀ» À§ÇØ »«´Ù.		
+/*		Å¾ï¿½Â½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.	*/
         $("body").on("click", ".select-item-wrap>a", function(){
             var ck = $(this).parents(".select-item-wrap").eq(0).hasClass("on");
             if(ck){
@@ -138,7 +138,7 @@ common = {
             $(this).parents(".select-item-wrap").eq(0).find("span").text($(this).text());
             $(".select-item-wrap").removeClass("on");
         });
-*/
+
 		
         $("body").on("click", ".contact-page-wrap .td-list li .qitem", function(){
             var ck = $(this).hasClass("on");

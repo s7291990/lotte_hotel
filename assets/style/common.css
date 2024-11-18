@@ -197,7 +197,7 @@ a.cubic:hover{opacity:.8;-webkit-transform: scale(0.95);-webkit-transition-timin
 
 .hidden{position:absolute;left:-20000px;}
 
-select {cursor:pointer;outline:none;background:url(../image/bg/bg-select01.png) no-repeat right center;appearance: none;-moz-appearance:none;-webkit-appearance: none;}
+select {cursor:pointer;outline:none;background:url(../image/bg/bg-select02.svg) no-repeat right center;appearance: none;-moz-appearance:none;-webkit-appearance: none;}
 select::-ms-expand {display:none}
 
 input[type=checkbox]{cursor:pointer;outline:none;float:left;background:url(../image/bg/bg-chk01-off.png) no-repeat;background-size:25px 25px;border:0;width:25px;height:25px;overflow:hidden;appearance: none;-moz-appearance: none;-webkit-appearance: none;}
